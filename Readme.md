@@ -1,4 +1,11 @@
 
+# Get all ATMs
+curl -X GET \
+  http://localhost:8080/location/atm/all \
+  -H 'Cache-Control: no-cache' \
+  -H 'Content-Type: application/json' \
+  
+
 # Get ATMs near
 curl -X POST \
   http://localhost:8080/location/ \
@@ -10,13 +17,6 @@ curl -X POST \
         "delegacion": "Azcapotzalco",
         "estado": "Ciudad de Mexico"
     }'
-
-
-# Get ATMs near
-curl -X GET \
-  http://localhost:8080/location/atm/all \
-  -H 'Cache-Control: no-cache' \
-  -H 'Content-Type: application/json' \
 
 
 # Get ATMs near
